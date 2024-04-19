@@ -38,4 +38,11 @@ public class PrimeCheckerTest {
         assertFalse(PrimeChecker.isPrime(26));
         // Thêm các trường hợp khác cho số không phải là số nguyên tố
     }
+
+    @Test
+    public void testIsPrime_WithZero_ShouldReturnFalse() {
+        assertFalse(PrimeChecker.isPrime(0));
+    }
+
+
 }
