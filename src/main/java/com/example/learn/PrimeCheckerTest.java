@@ -44,5 +44,11 @@ public class PrimeCheckerTest {
         assertFalse(PrimeChecker.isPrime(0));
     }
 
-
+    @Test
+    public void testIsPrime_WithNegativeNumber_ShouldReturnFalse() {
+        assertFalse(PrimeChecker.isPrime(-2));
+        assertFalse(PrimeChecker.isPrime(-3));
+        assertFalse(PrimeChecker.isPrime(-7));
+        // Thêm các trường hợp khác cho số âm
+    }
 }
